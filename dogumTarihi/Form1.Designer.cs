@@ -44,7 +44,7 @@ namespace dogumTarihi
             // 
             this.lblDogumTarihiniz.AutoSize = true;
             this.lblDogumTarihiniz.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDogumTarihiniz.Location = new System.Drawing.Point(276, 58);
+            this.lblDogumTarihiniz.Location = new System.Drawing.Point(83, 9);
             this.lblDogumTarihiniz.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblDogumTarihiniz.Name = "lblDogumTarihiniz";
             this.lblDogumTarihiniz.Size = new System.Drawing.Size(204, 29);
@@ -53,24 +53,25 @@ namespace dogumTarihi
             // 
             // dtpDogumGunu
             // 
-            this.dtpDogumGunu.Location = new System.Drawing.Point(248, 90);
+            this.dtpDogumGunu.Location = new System.Drawing.Point(48, 41);
             this.dtpDogumGunu.Name = "dtpDogumGunu";
-            this.dtpDogumGunu.Size = new System.Drawing.Size(270, 26);
+            this.dtpDogumGunu.Size = new System.Drawing.Size(260, 26);
             this.dtpDogumGunu.TabIndex = 1;
             // 
             // btnHesapla
             // 
-            this.btnHesapla.Location = new System.Drawing.Point(293, 131);
+            this.btnHesapla.Location = new System.Drawing.Point(100, 82);
             this.btnHesapla.Name = "btnHesapla";
             this.btnHesapla.Size = new System.Drawing.Size(146, 38);
             this.btnHesapla.TabIndex = 2;
             this.btnHesapla.Text = "Hesapla";
             this.btnHesapla.UseVisualStyleBackColor = true;
+            this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(272, 217);
+            this.label1.Location = new System.Drawing.Point(79, 168);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 20);
             this.label1.TabIndex = 3;
@@ -79,7 +80,7 @@ namespace dogumTarihi
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(199, 258);
+            this.label2.Location = new System.Drawing.Point(6, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 20);
             this.label2.TabIndex = 3;
@@ -88,7 +89,7 @@ namespace dogumTarihi
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(254, 302);
+            this.label3.Location = new System.Drawing.Point(61, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 20);
             this.label3.TabIndex = 3;
@@ -96,31 +97,32 @@ namespace dogumTarihi
             // 
             // lblYasiniz
             // 
-            this.lblYasiniz.Location = new System.Drawing.Point(360, 217);
+            this.lblYasiniz.Location = new System.Drawing.Point(167, 168);
             this.lblYasiniz.Name = "lblYasiniz";
-            this.lblYasiniz.Size = new System.Drawing.Size(57, 20);
+            this.lblYasiniz.Size = new System.Drawing.Size(110, 20);
             this.lblYasiniz.TabIndex = 3;
-            this.lblYasiniz.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblBurcunuz
             // 
-            this.lblBurcunuz.Location = new System.Drawing.Point(360, 302);
+            this.lblBurcunuz.Location = new System.Drawing.Point(167, 253);
             this.lblBurcunuz.Name = "lblBurcunuz";
-            this.lblBurcunuz.Size = new System.Drawing.Size(57, 20);
+            this.lblBurcunuz.Size = new System.Drawing.Size(110, 20);
             this.lblBurcunuz.TabIndex = 3;
             // 
             // lblYasadiginizGun
             // 
-            this.lblYasadiginizGun.Location = new System.Drawing.Point(360, 258);
+            this.lblYasadiginizGun.Location = new System.Drawing.Point(167, 209);
             this.lblYasadiginizGun.Name = "lblYasadiginizGun";
-            this.lblYasadiginizGun.Size = new System.Drawing.Size(57, 20);
+            this.lblYasadiginizGun.Size = new System.Drawing.Size(110, 20);
             this.lblYasadiginizGun.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 443);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.ClientSize = new System.Drawing.Size(356, 301);
             this.Controls.Add(this.lblBurcunuz);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblYasiniz);
@@ -131,9 +133,10 @@ namespace dogumTarihi
             this.Controls.Add(this.dtpDogumGunu);
             this.Controls.Add(this.lblDogumTarihiniz);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Burç,Yaş,Gün Hesapla";
             this.ResumeLayout(false);
             this.PerformLayout();
 

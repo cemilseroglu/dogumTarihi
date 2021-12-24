@@ -17,9 +17,18 @@ namespace dogumTarihi
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+
+
+        private void btnHesapla_Click(object sender, EventArgs e)
         {
+            DateTime dt = dtpDogumGunu.Value;
+            lblYasiniz.Text = (DateTime.Now.Year - dt.Year).ToString();
+            TimeSpan gecenSure = DateTime.Now - dt;
+            lblYasadiginizGun.Text = ((int)gecenSure.TotalDays).ToString();
+
 
         }
+
+
     }
 }
